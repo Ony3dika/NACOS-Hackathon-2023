@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+.iso{
+  background-image: url(./assets/iso2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}

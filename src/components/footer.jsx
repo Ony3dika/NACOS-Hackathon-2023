@@ -4,7 +4,7 @@ import { AiFillInstagram } from "react-icons/ai";
 function Footer() {
   return (
     <div>
-      <section className='container mx-auto mt-8 flex w-full justify-between rounded-t-lg border-t-2 border-gray-600 bg-primary px-5 py-5 text-sm leading-loose lg:px-36 lg:py-10 lg:leading-normal lg:text-base'>
+      <section className='container mx-auto mt-8 flex w-full justify-between rounded-t-lg border-t-2 border-gray-600 bg-primary dark:bg-darkSub px-5 py-5 text-sm leading-loose lg:px-36 lg:py-10 lg:leading-normal lg:text-base'>
         <div className='basis-2/5 font-bold text-gray-300 md:basis-1/5'>
           <p className='custom'>CodeCraft</p>
           <p className='font-semibold'>All right Reserved</p>

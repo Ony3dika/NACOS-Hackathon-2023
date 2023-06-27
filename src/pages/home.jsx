@@ -1,25 +1,27 @@
 import Navbar from "../components/navbar";
 import pic1 from "../assets/pic1.jpg";
 import pic2 from "../assets/pic2.jpg";
-import pic3 from "../assets/pic3.jpg"
+import pic3 from "../assets/pic3.jpg";
 import Footer from "../components/footer";
 function Home() {
+
+  
   return (
     <>
-      <div className='min-h-screen bg-base'>
+      <div className='min-h-screen bg-base dark:bg-darkBase'>
         <Navbar />
 
         {/* Intro */}
         <section className='container mx-auto mt-8 w-full px-5 md:px-10 lg:px-36'>
           <div className='flex items-center justify-center'>
-            <div className=' rounded-lg bg-gray-200 p-5 py-10'>
-              {" "}
+            <div className='iso mt-5 rounded-lg bg-gray-200 p-5 py-10 dark:bg-darkSub'>
               <p className='text-center text-xl font-bold text-sub lg:text-3xl'>
-                Welcome to <span className='text-primary'>CodeCraft</span>
+                Welcome to{" "}
+                <span className='text-primary dark:text-white'>CodeCraft</span>
                 <br />
                 Your Gateway to the World of Software Sorcery!
               </p>
-              <p className='mt-5 leading-loose text-base text-primary'>
+              <p className='mt-5 font-medium leading-loose text-base text-primary dark:text-white/70'>
                 Step into a realm where lines of code transform into digital
                 spells, and developers wield their keyboards like magic wands.
                 Welcome to CodeCraft, a place where the artistry of programming
@@ -60,7 +62,7 @@ function Home() {
                   alt=''
                 />
 
-                <p className='mt-3 basis-[63%] lg:mt-0'>
+                <p className='mt-3 basis-[63%] dark:text-white/70 lg:mt-0'>
                   Artificial Intelligence (AI) has emerged as a transformative
                   force, revolutionizing the way we live, work, and interact.
                   With its ability to analyze vast amounts of data, learn from
@@ -103,7 +105,7 @@ function Home() {
                   alt=''
                 />
 
-                <p className='mt-3 basis-[63%] lg:mt-0'>
+                <p className='mt-3 basis-[63%] dark:text-white/70 lg:mt-0'>
                   In our rapidly evolving world, technology continues to push
                   the boundaries of what we once thought possible. From
                   groundbreaking scientific discoveries to innovative gadgets
@@ -145,7 +147,7 @@ function Home() {
                   alt=''
                 />
 
-                <p className='mt-3 basis-[63%] lg:mt-0'>
+                <p className='mt-3 basis-[63%] dark:text-white/70 lg:mt-0'>
                   React, a popular JavaScript library for building user
                   interfaces, offers developers a powerful arsenal of tools and
                   hooks. Among these, the useState hook stands out as a
@@ -178,7 +180,7 @@ function Home() {
           </section>
         </section>
 
-        <Footer/>
+        <Footer />
       </div>
     </>
   );

@@ -1,12 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
         primary: "#0e1935",
         sub: "#4f46e5",
         base: "#ffff",
+        darkBase: "#0f0f15",
+        darkSub: "#12141d",
       },
 
       animation: {

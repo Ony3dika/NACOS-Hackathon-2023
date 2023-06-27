@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="transition-all ease-in duration-700">
         <BrowserRouter>
           <Routes>
             <Route element={<Home />} path='/' />
