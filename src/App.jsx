@@ -12,8 +12,8 @@ function App() {
           <Routes>
             <Route element={<Home />} path='/' />
             <Route element={<Blog />} path='/articles' />
-            <Route element={<Trend />} path='/trending' />
-            <Route element={<Saved />} path='/saved' />
+            <Route element={<Trend />} path='/' />
+            <Route element={<Saved />} path='/' />
           </Routes>
         </BrowserRouter>
       </div>

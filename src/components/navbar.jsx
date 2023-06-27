@@ -18,8 +18,8 @@ function Navbar() {
   }, [theme]);
 
   return (
-    <nav className='sticky top-0 z-50'>
-      <section className='container sticky left-0 top-0 mx-auto flex h-20 w-full border-b-[1px] border-primary dark:border-gray-600 bg-white/50 px-5 pt-8 backdrop-blur-3xl dark:bg-darkBase md:px-10 lg:px-24'>
+    <nav className='sticky top-0 z-50 '>
+      <section className='container sticky left-0 top-0 mx-auto flex  h-20 w-full border-b-[1px] border-primary dark:border-gray-600 bg-white/50 px-5 pt-3 backdrop-blur-3xl dark:bg-darkBase md:px-10 lg:px-24'>
         <div className='flex basis-2/3 items-center'>
           <p className='text-2xl font-bold text-primary dark:text-white '>
             Code<span className='text-sub'>Craft</span>
@@ -42,14 +42,14 @@ function Navbar() {
             </button>
           </Link>
 
-          <Link to={"/trending"}>
+          <Link to={"/"}>
             <button className='flex items-center justify-center transition-all duration-200 ease-linear hover:text-sub/70 focus:text-sub dark:text-white dark:hover:text-sub/70 dark:focus:text-sub'>
               <BsFire className='mr-1' size={"1.2rem"} />
               Trending
             </button>
           </Link>
 
-          <Link to={"/saved"}>
+          <Link to={"/"}>
             <button className='flex items-center justify-center transition-all duration-200 ease-linear hover:text-sub/70 focus:text-sub dark:text-white dark:hover:text-sub/70 dark:focus:text-sub'>
               <BsStarFill className='mr-1' size={"1.2rem"} />
               Saved
@@ -57,7 +57,7 @@ function Navbar() {
           </Link>
         </div>
 
-        <div className="basis-1/3 flex items-center justify-center">
+        <div className="basis-1/3 flex items-center justify-end">
           <button
             className='transition-all duration-300 ease-linear'
             onClick={() => {
@@ -75,7 +75,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <section className='fixed bottom-5 left-0 h-20 w-full lg:hidden'>
-        <div className='mx-10 flex h-full basis-full items-center justify-around rounded-3xl border-[1px] border-gray-100/10 bg-primary/90 backdrop-blur-sm lg:flex-col lg:border-0'>
+        <div className='mx-10 flex h-full basis-full items-center justify-around rounded-3xl border-[1px] border-gray-100/10 bg-primary/90 dark:bg-darkBase/90 backdrop-blur-sm lg:flex-col lg:border-0'>
           <Link to={"/"}>
             <button className='text-white transition-all duration-200 ease-linear focus:text-sub'>
               <BiSolidHome size={"1.2rem"} />
@@ -88,13 +88,13 @@ function Navbar() {
             </button>
           </Link>
 
-          <Link to={"/trending"}>
+          <Link to={"/"}>
             <button className='text-white transition-all duration-200 ease-linear focus:text-sub'>
               <BsFire size={"1.2rem"} />
             </button>
           </Link>
 
-          <Link to={"/saved"}>
+          <Link to={"/"}>
             <button className='text-white transition-all duration-200 ease-linear focus:text-sub'>
               <BsStarFill size={"1.2rem"} />
             </button>

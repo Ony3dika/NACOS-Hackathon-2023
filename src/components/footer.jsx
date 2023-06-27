@@ -11,7 +11,7 @@ function Footer() {
         </div>
 
         <div className='hidden basis-3/5 text-center font-medium text-gray-300 md:block'>
-          <p>2023 © CodeCraft, Behind The Games</p>
+          <p>2023 © CodeCraft, Exploring The Web</p>
         </div>
 
         <div className='flex basis-3/5 justify-around md:basis-1/5 md:justify-between'>
