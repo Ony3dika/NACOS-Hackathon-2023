@@ -7,7 +7,6 @@ export default {
         primary: "#0e1935",
         sub: "#4f46e5",
         base: "#ffff",
-        alt: "#F9F7F7",
       },
 
       animation: {

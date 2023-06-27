@@ -1,8 +1,8 @@
-import { useState } from 'react'
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Home from './pages/home';
-import Blog from './pages/blog';
-import About from "./pages/about"
+import Blog from './pages/articles';
+import Trend from "./pages/trend";
+import Saved from "./pages/saved";
 function App() {
 
   return (
@@ -11,8 +11,9 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route element={<Home />} path='/' />
-            <Route element={<Blog />} path='/blog' />
-            <Route element={<About />} path='/about' />
+            <Route element={<Blog />} path='/articles' />
+            <Route element={<Trend />} path='/trending' />
+            <Route element={<Saved />} path='/saved' />
           </Routes>
         </BrowserRouter>
       </div>
