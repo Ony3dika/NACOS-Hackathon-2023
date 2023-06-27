@@ -1,6 +1,8 @@
 import Navbar from "../components/navbar";
-import pic from "../assets/pic2.jpg";
-
+import pic1 from "../assets/pic1.jpg";
+import pic2 from "../assets/pic2.jpg";
+import pic3 from "../assets/pic3.jpg"
+import Footer from "../components/footer";
 function Home() {
   return (
     <>
@@ -44,14 +46,62 @@ function Home() {
 
           <section className='mt-10'>
             <p className='text-lg font-bold text-sub lg:text-2xl'>Trending</p>
+            {/* Article 1 */}
+            <article className='mt-5 rounded-lg bg-sub/5 p-5'>
+              <p className='text-md font-bold text-sub lg:text-xl'>
+                Unleashing the Power of Artificial Intelligence: Transforming
+                Industries and Empowering Humanity
+              </p>
 
+              <div className='mt-5 flex flex-col justify-between lg:flex-row'>
+                <img
+                  src={pic1}
+                  className='h-52 w-80 basis-1/3 rounded-lg object-cover'
+                  alt=''
+                />
+
+                <p className='mt-3 basis-[63%] lg:mt-0'>
+                  Artificial Intelligence (AI) has emerged as a transformative
+                  force, revolutionizing the way we live, work, and interact.
+                  With its ability to analyze vast amounts of data, learn from
+                  patterns, and make intelligent decisions, AI has become an
+                  indispensable tool across various industries. In this article,
+                  we will explore the incredible potential of AI, its impact on
+                  different sectors, and the ethical considerations surrounding
+                  its adoption.
+                  <br />
+                  <br />
+                  AI in Healthcare: AI is reshaping the healthcare landscape by
+                  enhancing diagnosis, treatment, and patient care. Machine
+                  Learning algorithms can quickly analyze medical...
+                </p>
+              </div>
+
+              <div className='mt-5 flex items-center justify-between'>
+                <div className='flex items-center justify-between rounded-full bg-gray-300/80 text-sm text-primary lg:text-primary'>
+                  <span className='px-3'>5 min read</span>
+                  <span className='rounded-full bg-gray-500/20 px-5 py-3'>
+                    20th June
+                  </span>
+                </div>
+                <p className='text-sm font-bold text-sub lg:text-base lg:text-sub'>
+                  See More...
+                </p>
+              </div>
+            </article>
+
+            {/* Article 2 */}
             <article className='mt-5 rounded-lg bg-sub/5 p-5'>
               <p className='text-md font-bold text-sub lg:text-xl'>
                 Unveiling the Latest Tech Innovations Shaping the Future
               </p>
 
               <div className='mt-5 flex flex-col justify-between lg:flex-row'>
-                <img src={pic} className='object-cover h-52 w-80 basis-1/3 rounded-lg' alt='' />
+                <img
+                  src={pic2}
+                  className='h-52 w-80 basis-1/3 rounded-lg object-cover'
+                  alt=''
+                />
 
                 <p className='mt-3 basis-[63%] lg:mt-0'>
                   In our rapidly evolving world, technology continues to push
@@ -63,21 +113,72 @@ function Home() {
                   shaping the future and transforming the way we live, work, and
                   interact.
                   <br /> <br />
-                  In our rapidly evolving world, technology
-                  continues to push the boundaries of what we once thought
-                  possible. From groundbreaking scientific discoveries to...
-              
+                  In our rapidly evolving world, technology continues to push
+                  the boundaries of what we once thought possible. From
+                  groundbreaking scientific discoveries to...
                 </p>
               </div>
 
-              <p className='text-sm font-bold text-right lg:text-sub text-sub lg:text-base'>
-                See More...
+              <div className='mt-5 flex items-center justify-between'>
+                <div className='flex items-center justify-between rounded-full bg-gray-300/80 text-sm text-primary lg:text-primary'>
+                  <span className='px-3'>7 min read</span>
+                  <span className='rounded-full bg-gray-500/20 px-5 py-3'>
+                    23th June
+                  </span>
+                </div>
+                <p className='text-sm font-bold text-sub lg:text-base lg:text-sub'>
+                  See More...
+                </p>
+              </div>
+            </article>
+
+            {/* Article 3 */}
+            <article className='mt-5 rounded-lg bg-sub/5 p-5'>
+              <p className='text-md font-bold text-sub lg:text-xl'>
+                A Comprehensive Guide to Using the useState Hook
               </p>
 
-              <p></p>
+              <div className='mt-5 flex flex-col justify-between lg:flex-row'>
+                <img
+                  src={pic3}
+                  className='h-52 w-80 basis-1/3 rounded-lg object-cover'
+                  alt=''
+                />
+
+                <p className='mt-3 basis-[63%] lg:mt-0'>
+                  React, a popular JavaScript library for building user
+                  interfaces, offers developers a powerful arsenal of tools and
+                  hooks. Among these, the useState hook stands out as a
+                  fundamental tool for managing state within functional
+                  components. In this tutorial, we will dive into the useState
+                  hook and explore its capabilities, guiding you through its
+                  implementation and showcasing its versatility in creating
+                  dynamic and interactive React applications.
+                  <br />
+                  <br />
+                  The useState hook is a built-in React hook that allows
+                  functional components to manage state locally. We will begin
+                  by understanding the basic syntax and usage of useState,
+                  exploring...
+                </p>
+              </div>
+
+              <div className='mt-5 flex items-center justify-between'>
+                <div className='flex items-center justify-between rounded-full bg-gray-300/80 text-sm text-primary lg:text-primary'>
+                  <span className='px-3'>6 min read</span>
+                  <span className='rounded-full bg-gray-500/20 px-5 py-3'>
+                    19th June
+                  </span>
+                </div>
+                <p className='text-sm font-bold text-sub lg:text-base lg:text-sub'>
+                  See More...
+                </p>
+              </div>
             </article>
           </section>
         </section>
+
+        <Footer/>
       </div>
     </>
   );
