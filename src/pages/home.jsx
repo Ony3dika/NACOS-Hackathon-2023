@@ -8,6 +8,20 @@ function Home() {
   return (
     <>
       <div className='min-h-screen bg-base dark:bg-darkBase'>
+        <iframe
+          id='iframeai'
+          className=' iframeai'
+          style={{
+            width: "24vw",
+            height: "100vh",
+            position: "fixed",
+            zIndex:"1",
+            top: "0",
+            right: "0",
+          }}
+          src='https://proagents.io/embed?id=c43d143d-3baf-4661-a813-c6288e0fcc39'
+          frameBorder='0'
+        ></iframe>
         <Navbar />
 
         {/* Intro */}
@@ -165,7 +179,12 @@ function Home() {
             {/* Article 3 */}
             <InView threshold={0.4} triggerOnce={true}>
               {({ inView, ref }) => (
-                <article ref={ref} className={`mt-5 rounded-lg opacity-0 bg-sub/5 p-5 ${inView ? "animate-slideleft"  : " "}`}>
+                <article
+                  ref={ref}
+                  className={`mt-5 rounded-lg bg-sub/5 p-5 opacity-0 ${
+                    inView ? "animate-slideleft" : " "
+                  }`}
+                >
                   <p className='text-md font-bold text-sub lg:text-xl'>
                     A Comprehensive Guide to Using the useState Hook
                   </p>
