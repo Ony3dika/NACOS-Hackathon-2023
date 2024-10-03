@@ -7,3 +7,13 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+@media (min-width: 1024px) {
+  .iframeai {
+    width: 24vw;
+  }
+}
+
+.iframeai {
+  width: 100vw;
+}

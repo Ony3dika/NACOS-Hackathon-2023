@@ -74,7 +74,7 @@ function Navbar() {
       </section>
 
       {/* Mobile Menu */}
-      <section className='fixed bottom-5 left-0 h-20 w-full lg:hidden'>
+      {/* <section className='fixed bottom-5 left-0 h-20 w-full lg:hidden'>
         <div className='mx-10 flex h-full basis-full items-center justify-around rounded-3xl border-[1px] border-gray-100/10 bg-primary/90 dark:bg-darkBase/90 backdrop-blur-sm lg:flex-col lg:border-0'>
           <Link to={"/"}>
             <button className='text-white transition-all duration-200 ease-linear focus:text-sub'>
@@ -100,7 +100,7 @@ function Navbar() {
             </button>
           </Link>
         </div>
-      </section>
+      </section> */}
     </nav>
   );
 }
