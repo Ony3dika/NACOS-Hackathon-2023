@@ -20,7 +20,7 @@ function Home() {
             top: "0",
             right: "0",
           }}
-          src='http://localhost:3000/embed?id=c43d143d-3baf-4661-a813-c6288e0fcc39'
+          src='https://proagents.io/embed?id=c43d143d-3baf-4661-a813-c6288e0fcc39'
           frameBorder='0'
         ></iframe>
         <Navbar />
