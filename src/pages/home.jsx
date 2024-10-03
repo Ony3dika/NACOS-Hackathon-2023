@@ -12,6 +12,7 @@ function Home() {
         <iframe
           id='iframeai'
           className='iframeai'
+          allow="microphone"
           style={{
             height: "100vh",
             position: "fixed",
