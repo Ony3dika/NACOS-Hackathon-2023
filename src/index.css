@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.iso{
+.iso {
   background-image: url(./assets/iso2.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -13,7 +13,13 @@
     width: 24vw;
   }
 }
-
 .iframeai {
   width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  border: none;
+  background-color: transparent;
 }

@@ -5,23 +5,14 @@ import pic3 from "../assets/pic3.jpg";
 import Footer from "../components/footer";
 import { InView } from "react-intersection-observer";
 function Home() {
-
   return (
     <>
       <div className='min-h-screen bg-base dark:bg-darkBase'>
         <iframe
+          allow='microphone'
           id='iframeai'
-          className='iframeai'
-          allow="microphone"
-          style={{
-            height: "100vh",
-            position: "fixed",
-            zIndex: "1",
-            backgroundColor: "transparent",
-            top: "0",
-            right: "0",
-          }}
-          src='https://proagents.io/embed?id=c43d143d-3baf-4661-a813-c6288e0fcc39'
+          className=' iframeai'
+          src='https://proagents.io/embed?id=4f4f2da5-94b9-4ec5-af0a-8e232d501893'
           frameBorder='0'
         ></iframe>
         <Navbar />
